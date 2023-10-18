@@ -86,3 +86,77 @@ figcaption {
     text-align: center;
     margin-top: 10px;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr th {
+    color: #fff;
+}
+
+/* Table styling */
+
+table th, table td {
+    border: 1px solid black;
+    padding: 10px;
+    color: #111; 
+}
+
+table tr:nth-child(odd) {
+    background-color: #aaa;
+}
+
+table tr:nth-child(even) {
+    background-color: #ccc;
+}
+
+table tr:first-child {
+    background-color: #333;
+    color: #fff;
+}
+
+.special-th {
+    color: black;
+}
+
+/* Form styling */
+
+button, input[type="submit"], input[type="reset"], input[type="text"], input[type="tel"], input[type="email"], select {
+    margin-bottom: 15px; /* Add space between each form element */
+}
+
+button, input[type="submit"], input[type="reset"] {
+    background-color: #333; 
+    color: #fff;
+    border: none;
+    padding: 12px 18px; /* Increased padding a bit for a better visual appearance */
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block; /* Make buttons side by side */
+    margin-right: 10px; /* Add space between the submit and reset button */
+}
+
+button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #555;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], select {
+    padding: 10px; /* Consistent padding for all input types */
+    border: 2px solid #fff;
+    font-size: 16px;
+    width: 250px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box; /* Ensure that padding and border are included in the total width */
+    background-color: #fff
+}
+
+input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, select:focus {
+    border-color: #fff;
+    outline: none;
+}
+
+.business-form {
+    margin-top: 40px;
+}
