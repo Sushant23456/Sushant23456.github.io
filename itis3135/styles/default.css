@@ -160,3 +160,22 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, se
 .business-form {
     margin-top: 40px;
 }
+
+/* Stark Tern Theme Styles */
+
+.stark-tern-theme {
+    border: 2px solid #555;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.stark-tern-theme h3 {
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.stark-tern-theme p {
+    color: #aaa;
+}
+
