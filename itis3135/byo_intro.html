@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushant Tiwari || ITIS 3135 BYO Intro</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/survey.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Sushant Tiwari || ITIS 3135</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="introduction.html">Introduction</a>
+            <a href="contract.html">Contract</a>
+            <a href="tables.html">Tables</a>
+            <a href="forms.html">Form</a>
+            <a href="website_evaluation.html">Website Evaluations</a>
+            <a href="crappy_page.html">Crappy Page</a>
+            <a href="first_scripts.html">First Scripts</a>
+            <a href="byo_intro.html">BYO Intro</a> <!-- Add the BYO Intro link -->
+            <a href="index.html">Back to Main Site</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>BYO Intro</h2>
+        <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+
+        <form id="introForm">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+            </div>
+
+            <div>
+                <label for="mascot">Mascot:</label>
+                <input type="text" id="mascot" name="mascot" required placeholder="Your Mascot">
+            </div>
+
+            <div>
+                <label for="image">Image (PNG or JPG only):</label>
+                <input type="file" id="image" name="image" accept="image/png, image/jpeg">
+            </div>
+
+            <div>
+                <label for="imageCaption">Image Caption:</label>
+                <input type="text" id="imageCaption" name="imageCaption" required placeholder="Image Caption">
+            </div>
+
+            <div>
+                <label for="personalBackground">Personal Background:</label>
+                <textarea id="personalBackground" name="personalBackground" required
+                    placeholder="Your personal background"></textarea>
+            </div>
+
+            <div>
+                <label for="professionalBackground">Professional Background:</label>
+                <textarea id="professionalBackground" name="professionalBackground" required
+                    placeholder="Your professional background"></textarea>
+            </div>
+
+            <div>
+                <label for="academicBackground">Academic Background:</label>
+                <textarea id="academicBackground" name="academicBackground" required
+                    placeholder="Your academic background"></textarea>
+            </div>
+
+            <div>
+                <label for="webDevBackground">Background in Web Development:</label>
+                <textarea id="webDevBackground" name="webDevBackground" required
+                    placeholder="Your background in web development"></textarea>
+            </div>
+
+            <div>
+                <label for="primaryPlatform">Primary Computer Platform:</label>
+                <input type="text" id="primaryPlatform" name="primaryPlatform" required
+                    placeholder="Your primary computer platform">
+            </div>
+
+            <div id="courseContainer">
+                <label>Courses currently taking:</label>
+                <button type="button" id="addCourse">Add Course</button>
+              </div>
+              
+            <div>
+                <label for="funnyThing">Funny thing?</label>
+                <input type="text" id="funnyThing" name="funnyThing" placeholder="Share something funny">
+            </div>
+
+            <div>
+                <label for="anythingElse">Anything else?</label>
+                <input type="text" id="anythingElse" name="anythingElse" placeholder="Anything else you want to add">
+            </div>
+
+            <div>
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">I understand that what is on this page is not password protected...</label>
+            </div>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+
+        <div id="result"></div>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="https://webpages.charlotte.edu/stiwar16/">UNCC Home Page</a></li>
+            <li><a href="https://github.com/Sushant23456/Sushant23456.github.io">GitHub</a></li>
+            <li><a href="https://sushant23456.github.io/">GitHub.io</a></li>
+            <li><a href="https://www.freecodecamp.org/fcc888004a9-1ae3-436e-bbd8-66728bb2934d">FreeCodeCamp</a></li>
+            <li><a href="https://www.codecademy.com/profiles/sushant234">Codecademy</a></li>
+            <li><a href="https://www.linkedin.com/in/sushant-tiwari-2570151b8/">LinkedIn</a></li>
+        </ul>
+        <p>Designed by TiwariAssociation &copy; 2023</p>
+
+        <a href="https://validator.w3.org/check?uri=referer">
+            <img style="border:0;width:88px;height:31px"
+                src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!">
+        </a>
+    </footer>
+</body>
+
+</html>

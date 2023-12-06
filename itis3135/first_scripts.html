@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sushant Tiwari || ITIS 3135 Homepage</title>
+    <title>FirstScripts</title>
     <link rel="stylesheet" href="styles/default.css">
-    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/defaultscripts.js" defer></script>
 </head>
-
 <body>
     <header>
         <h1>Sushant Tiwari || ITIS 3135</h1>
@@ -21,15 +19,35 @@
             <a href="website_evaluation.html">Website Evaluations</a>
             <a href="crappy_page.html">Crappy Page</a>
             <a href="first_scripts.html">First Scripts</a>
-            <a href="byo_intro.html">BYO Intro</a>
             <a href="index.html">Back to Main Site</a>
-
         </nav>
     </header>
 
     <main>
-        <h2>ITIS 3135 Homepage</h2>
-        <p>This is all the content for my ITIS 3135 class.</p>
+        <h1>FirstScripts</h1>
+        <h3 id="dateTimeDisplay"></h3>
+
+        <form id="userForm">
+            <label for="userName">Name:</label>
+            <input type="text" id="userName" required>
+            <label for="userMood">How are you feeling?</label>
+            <input type="text" id="userMood" required>
+            <input type="submit" value="Submit">
+        </form>
+
+        <h3 id="greetingDisplay"></h3>
+
+        <!-- Favorite Number Section -->
+        <label for="favNumber">Enter your favorite number:</label>
+        <input type="number" id="favNumber">
+        <button onclick="displayPolygonName()">Submit</button>
+
+        <!-- Animal Brand Functions -->
+        <button onclick="starkTernFact();">Stark Tern Fact</button>
+<button onclick="starkTernSound();">Stark Tern Sound</button>
+<button onclick="starkTernDance();">Stark Tern Dance</button>
+<button onclick="starkTernAdvice();">Stark Tern Advice</button>
+
     </main>
 
     <footer>
@@ -51,6 +69,4 @@
         </a>
     </footer>
 </body>
-
-
 </html>
