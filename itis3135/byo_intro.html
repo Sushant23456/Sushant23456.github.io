@@ -45,7 +45,9 @@
             <div>
                 <label for="image">Image (PNG or JPG only):</label>
                 <input type="file" id="image" name="image" accept="image/png, image/jpeg">
-            </div>
+                <img id="displayImage" style="max-width: 500px; max-height: 300px; display: none;"/> <!-- Hidden initially -->
+              </div>
+              
 
             <div>
                 <label for="imageCaption">Image Caption:</label>
@@ -86,7 +88,7 @@
                 <label>Courses currently taking:</label>
                 <button type="button" id="addCourse">Add Course</button>
               </div>
-              
+
             <div>
                 <label for="funnyThing">Funny thing?</label>
                 <input type="text" id="funnyThing" name="funnyThing" placeholder="Share something funny">
@@ -99,7 +101,7 @@
 
             <div>
                 <input type="checkbox" id="agree" name="agree" required>
-                <label for="agree">I understand that what is on this page is not password protected...</label>
+                <label for="agree">I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available."</label>
             </div>
 
             <input type="submit" value="Submit">

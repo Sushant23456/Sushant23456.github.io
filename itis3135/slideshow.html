@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushant Tiwari || ITIS 3135 Homepage</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sushant Tiwari || ITIS 3135</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="introduction.html">Introduction</a>
+            <a href="contract.html">Contract</a>
+            <a href="tables.html">Tables</a>
+            <a href="forms.html">Form</a>
+            <a href="website_evaluation.html">Website Evaluations</a>
+            <a href="crappy_page.html">Crappy Page</a>
+            <a href="first_scripts.html">First Scripts</a>
+            <a href="byo_intro.html">BYO Intro</a>
+            <a href="calculator_try.html">Calculator</a>
+            <a href="interactiveDrawing.html">Interactive Drawing</a>
+            <a href="slideshow.html">Slideshow</a>
+            <a href="index.html">Back to Main Site</a>
+
+        </nav>
+    </header>
+
+    <main>
+        <h2>My Name Slideshow</h2>
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="images/sunflower.jpeg" style="width:100%">
+                <div class="caption-container">
+                    <p id="caption1">S - Sunflower</p>
+                </div>
+            </div>
+
+                <div class="mySlides">
+                    <img src="images/tiger.png" style="width:100%">
+                    <div class="caption-container">
+                        <p id="caption2">T - Tiger</p>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <img src="images/apple.jpeg" style="width:100%">
+                    <div class="caption-container">
+                        <p id="caption3">A - Apple</p>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <img src="images/rainbow.jpeg" style="width:100%">
+                    <div class="caption-container">
+                        <p id="caption4">R - Rainbow</p>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <img src="images/kite.jpeg" style="width:100%">
+                    <div class="caption-container">
+                        <p id="caption5">K - Kite</p>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <img src="images/telescope.jpeg" style="width:100%">
+                    <div class="caption-container">
+                        <p id="caption6">T - Telescope</p>
+                    </div>>
+                </div>
+
+                <div class="mySlides">
+                    <img src="images/rose.jpeg" style="width:100%">
+                    <div class="caption-container">
+                        <p id="caption7">R - Rose</p>
+                    </div>
+                </div>
+
+
+                <div class="mySlides">
+                <img src="images/eagle.jpeg" style="width:100%">
+                <div class="caption-container">
+                    <p id="caption8">E - Eagle</p>
+                </div>
+                </div>
+
+                <div class="mySlides">
+                <img src="images/notebook.jpeg" style="width:100%">
+                <div class="caption-container">
+                    <p id="caption9">N - Notebook</p>
+                </div>
+                </div>
+
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="thumbnail-container">
+            <img class="thumbnail" src="images/sunflower.jpeg" onclick="currentSlide(1)">
+            <img class="thumbnail" src="images/tiger.png" onclick="currentSlide(2)">
+            <img class="thumbnail" src="images/apple.jpeg" onclick="currentSlide(3)">
+            <img class="thumbnail" src="images/rainbow.jpeg" onclick="currentSlide(4)">
+            <img class="thumbnail" src="images/kite.jpeg" onclick="currentSlide(5)">
+            <img class="thumbnail" src="images/telescope.jpeg" onclick="currentSlide(6)">
+            <img class="thumbnail" src="images/rose.jpeg" onclick="currentSlide(7)">
+            <img class="thumbnail" src="images/eagle.jpeg" onclick="currentSlide(8)">
+            <img class="thumbnail" src="images/notebook.jpeg" onclick="currentSlide(9)">
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="https://webpages.charlotte.edu/stiwar16/">UNCC Home Page</a></li>
+            <li><a href="https://github.com/Sushant23456/Sushant23456.github.io">GitHub</a></li>
+            <li><a href="https://sushant23456.github.io/">GitHub.io</a></li>
+            <li><a href="https://www.freecodecamp.org/fcc888004a9-1ae3-436e-bbd8-66728bb2934d">FreeCodeCamp</a></li>
+            <li><a href="https://www.codecademy.com/profiles/sushant234">Codecademy</a></li>
+            <li><a href="https://www.linkedin.com/in/sushant-tiwari-2570151b8/">LinkedIn</a></li>
+        </ul>
+        <p>Designed by TiwariAssociation &copy; 2023</p>
+
+        <a href="https://validator.w3.org/check?uri=referer">
+            <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

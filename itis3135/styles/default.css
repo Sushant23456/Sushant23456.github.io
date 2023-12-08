@@ -121,21 +121,20 @@ table tr:first-child {
     color: black;
 }
 
-/* Form styling */
 
 button, input[type="submit"], input[type="reset"], input[type="text"], input[type="tel"], input[type="email"], select {
-    margin-bottom: 15px; /* Add space between each form element */
+    margin-bottom: 15px; 
 }
 
 button, input[type="submit"], input[type="reset"] {
     background-color: #333; 
     color: #fff;
     border: none;
-    padding: 12px 18px; /* Increased padding a bit for a better visual appearance */
+    padding: 12px 18px; 
     cursor: pointer;
     transition: 0.3s;
-    display: inline-block; /* Make buttons side by side */
-    margin-right: 10px; /* Add space between the submit and reset button */
+    display: inline-block; 
+    margin-right: 10px;
 }
 
 button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
@@ -143,12 +142,12 @@ button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
 }
 
 input[type="text"], input[type="tel"], input[type="email"], select {
-    padding: 10px; /* Consistent padding for all input types */
+    padding: 10px; 
     border: 2px solid #fff;
     font-size: 16px;
     width: 250px;
     font-family: Arial, sans-serif;
-    box-sizing: border-box; /* Ensure that padding and border are included in the total width */
+    box-sizing: border-box;
     background-color: #fff
 }
 
@@ -160,8 +159,6 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, se
 .business-form {
     margin-top: 40px;
 }
-
-/* Stark Tern Theme Styles */
 
 .stark-tern-theme {
     border: 2px solid #555;
@@ -177,5 +174,173 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, se
 
 .stark-tern-theme p {
     color: #aaa;
+}
+
+
+#calculator {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#display {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+#calculator-buttons button {
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#calculator-buttons .equal {
+    background-color: orange;
+}
+
+#calculator-buttons .clear {
+    background-color: red;
+    color: #fff;
+}
+
+.slideshow-container {
+    max-width: 1000px; 
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    flex: 15%;
+    padding: 5px;
+}
+
+.demo {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.thumbnail-container {
+    text-align: center;
+    margin-top: 20px;
+    white-space: nowrap;
+    overflow-x: auto; 
+}
+
+.thumbnail {
+    cursor: pointer;
+    height: 50px; 
+    width: auto;
+    margin: 5px;
+    opacity: 0.6;
+    display: inline-block;
+}
+
+.thumbnail:hover {
+    opacity: 1;
+}
+
+
+@media (max-width: 575px) {
+    body, h1, h2, p, ul, li, a {
+        margin: 0;
+        padding: 0;
+    }
+
+    header, footer {
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    main {
+        max-width: 100%;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .slideshow-container, .thumbnail-container {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+    .thumbnail {
+        height: 30px;
+    }
+
+    .prev, .next {
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
