@@ -302,6 +302,14 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, se
 }
 
 
+.wireframe img {
+    width: 300px;
+    height: 200px; 
+    margin-right: 10px; 
+}
+
+
+
 @media (max-width: 575px) {
     body, h1, h2, p, ul, li, a {
         margin: 0;
